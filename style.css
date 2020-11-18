@@ -18,6 +18,7 @@ header {
 
 .wrapper {
 	width: 100%;
+	text-align: center;
 }
 
 main {
@@ -32,7 +33,7 @@ footer {
 }  
 
 .container {
-  width: 600px;
+  width: auto;
   margin: auto;
 }
 
