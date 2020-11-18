@@ -1,0 +1,54 @@
+/* ------ structure  ------ */
+h1, h2, h3, p, nav {
+  text-align: center;
+}
+  
+body {
+	background-color: #fff;
+  margin: 0;
+}
+
+header {
+  height: 130px;
+  background-color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 15px;
+
+}  
+
+main {
+  min-height: 500px;
+  background-image: url("images/portfolio-background.jpg")
+}
+
+footer {
+  height: 120px;
+  background-color: black;
+  padding: 20px;
+  font-family: cursive
+}  
+
+.container {
+  width: 600px;
+  margin: auto;
+}
+
+header h1 {
+  color: red;
+  padding: 30px 0 0 0;
+}
+
+footer p {
+  padding: 40px 0 0 0;
+  color: red
+}
+
+header h2 {
+  color: red
+}
+
+img, iframe { 
+  width: 100%;	
+  border-radius: 8px;
+  border: 1px solid #c5c0b8;
+} 
