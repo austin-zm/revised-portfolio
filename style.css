@@ -21,7 +21,6 @@ header {
 }
 
 main {
-  min-height: 500px;
   background-image: url("images/portfolio-background.jpg")
 }
 
@@ -51,8 +50,6 @@ header h2 {
   color: red
 }
 
-img, iframe { 
-  width: 100%;	
-  border-radius: 8px;
+img { 	
   border: 1px solid #c5c0b8;
 } 
