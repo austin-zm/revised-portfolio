@@ -16,6 +16,10 @@ header {
 
 }  
 
+.wrapper {
+	width: 100%;
+}
+
 main {
   min-height: 500px;
   background-image: url("images/portfolio-background.jpg")
