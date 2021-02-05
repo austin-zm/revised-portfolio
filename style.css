@@ -1,56 +1,215 @@
-/* ------ structure  ------ */
-h1, h2, h3, p, nav {
-  text-align: center;
-}
-  
+/* -------  General Styles ------- */
+
 body {
-	background-color: #fff;
-  margin: 0;
+  margin: 0px;
+  font-family: "Indie Flower", cursive;
+  background: url(images/Pic22.jpg) no-repeat;
+  background-position: 45% 20%;
+  background-size: cover;
 }
 
 header {
-  height: 130px;
-  background-color: black;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 15px;
-
-}  
-
-.wrapper {
-	width: 100%;
-	text-align: center;
+  background-color: #000000;
+  margin-bottom: 40px;
 }
 
+.title {
+  font-family: "Indie Flower", cursive;
+  font-size: 72px;
+  color: #416bdd;
+  text-align: center;
+  letter-spacing: -3;
+  margin: 0;
+  padding: 20px 0 0 0;
+}
+
+/* ---  Navigation --- */
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  font-size: 32px;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+  font-family: "Indie Flower", cursive;
+}
+
+header nav ul li a:hover {
+  color: #416bdd;
+}
+
+@media all and (min-width: 700px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .title {
+    margin: 14px 0 14px 20px;
+    padding-top: 0;
+    font-size: 42px;
+  }
+
+  header nav {
+    margin-top: 14px;
+  }
+}
+
+/* ---  Primary Groups --- */
+
 main {
-  background-image: url("images/portfolio-background.jpg")
+  padding: 20px 0;
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+section.about-me {
+  background-color: #bcce7c;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin: 80px 0;
 }
 
 footer {
-  height: 120px;
-  background-color: black;
-  padding: 20px;
-  font-family: cursive
-}  
-
-.container {
-  width: auto;
-  margin: auto;
+  background-color: #000000;
+  margin-top: 40px;
+  margin-bottom: 0;
 }
 
-header h1 {
-  color: red;
-  padding: 30px 0 0 0;
+/* ---  Typography --- */
+.intro {
+  font-size: xx-large;
+}
+
+h1 {
+  font-size: 48px;
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  color: #000000;
+}
+
+h2 {
+  font-size: 36px;
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  margin: 0 10px;
+}
+
+h3 {
+  font-size: 38px;
+  font-family: "Indie Flower", cursive;
+  font-weight: 500;
+}
+.para {
+  font-weight: 1000;
+  color: rgb(0, 0, 0);
+  text-shadow: 0.07em 0 rgb(255, 255, 255), 0 0.07em rgb(255, 251, 251),
+    -0.07em 0 rgb(255, 250, 250), 0 -0.07em rgb(255, 255, 255);
+}
+
+p {
+  font-family: "Indie Flower", cursive;
+  line-height: 1.5em;
+  margin-bottom: 0;
+  font-size: large;
+  font-weight: bolder;
+}
+
+main a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+main a:link {
+  color: #020202;
+}
+main a:visited {
+  color: #020202;
+}
+main a:hover {
+  color: #416bdd;
+}
+a:active {
+  color: #416bdd;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 footer p {
-  padding: 40px 0 0 0;
-  color: red
+  color: #fff;
+  text-align: center;
+  padding: 20px;
 }
 
-header h2 {
-  color: red
+main img {
+  width: 100%;
 }
 
-img { 	
-  border: 1px solid #c5c0b8;
-} 
+img.image-enhanced {
+  border-radius: 8px;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+/* ---  (Desktop) Groups & Items --- */
+
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+  .group {
+    flex-direction: row;
+  }
+}
+
+/* Contact Form Design */
+
+form {
+  padding-right: 8px;
+  /* Fixed small sizing issue on the right */
+}
+
+form label {
+  display: block;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
+}
