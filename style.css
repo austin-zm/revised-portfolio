@@ -32,6 +32,7 @@ header nav {
 }
 
 header nav ul {
+  display: flex;
   flex-direction: row;
   padding-bottom: 0;
 }
