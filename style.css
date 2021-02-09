@@ -26,13 +26,11 @@ header {
 /* ---  Navigation --- */
 
 header nav {
-  display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
 header nav ul {
-  display: flex;
   flex-direction: row;
   padding-bottom: 0;
 }
